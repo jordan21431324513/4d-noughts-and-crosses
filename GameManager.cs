@@ -125,7 +125,7 @@ public class GameManager : MonoBehaviour
         //3d diagonal win
         for (int offset = 1; offset < GameArea.x; offset++)
         {
-            for (int ii = 0; ii < GameArea.x - offset; ii++)
+            for (int ii = 0; ii <= GameArea.x - offset; ii++)
             {
                 if (ii <= GameArea.y && ii <= GameArea.z)
                 {
@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour
 
         for (int offset = 1; offset < GameArea.y; offset++)
         {
-            for (int ii = 0; ii < GameArea.y - offset; ii++)
+            for (int ii = 0; ii <= GameArea.y - offset; ii++)
             {
                 if (ii <= GameArea.x && ii <= GameArea.z)
                 {
@@ -167,7 +167,7 @@ public class GameManager : MonoBehaviour
 
         for (int offset = 0; offset < GameArea.z; offset++)
         {
-            for (int ii = 0; ii < GameArea.z - offset; ii++)
+            for (int ii = 0; ii <= GameArea.z - offset; ii++)
             {
                 if (ii <= GameArea.x && ii <= GameArea.y)
                 {
