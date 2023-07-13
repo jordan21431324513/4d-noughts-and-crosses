@@ -61,13 +61,14 @@ public class GridGenerator : MonoBehaviour
 
                             if(sides == 4)
                             {
-
+                            goto unplayable;
                             }
                         }
 
                         if(GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                         {
-
+                        Unplayable:
+                        //create unplayable tile
                         }
                     }
                 }
